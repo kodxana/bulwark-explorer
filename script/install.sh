@@ -20,8 +20,8 @@ installNginx () {
     sudo rm -f /etc/nginx/sites-available/default
     sudo cat > /etc/nginx/sites-available/default << EOL
 server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
+    listen 3377 default_server;
+    listen [::]:3377 default_server;
 
     root /var/www/html;
     index index.html index.htm index.nginx-debian.html;
